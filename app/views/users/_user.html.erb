@@ -1,0 +1,29 @@
+<table class: 'row'>
+<tr>
+  <%= gravatar_for @user %>
+</tr>
+  <tr>
+    <td class="td"><%=label_tag 'User Name :'%></td>
+    <td><%= link_to @user.name%> </td>
+  </tr>
+  <tr>
+    <td class="td"><%=label_tag 'Email_id :' %></td>
+    <td><%= link_to @user.email %></td>
+  </tr>
+   <tr>
+    <td class="td"><%= label_tag 'Created_at :' %></td>
+    <td><%= link_to @user.created_at %></td>
+  </tr>
+   <tr>
+    <td class="td"><%= label_tag 'updated_at :'%></td>
+    <td><%= link_to @user.updated_at %></td>
+  </tr>
+   <tr>
+    <td class="td"><%= label_tag 'admin :' %></td>
+    <td><%= link_to @user.admin %></td>
+  </tr>
+   <tr>
+    <td class="td"> <%=label_tag 'activated_at :' %>  </td>
+    <td><%= link_to @user.activated_at %> </td>
+  </tr>
+</table>
